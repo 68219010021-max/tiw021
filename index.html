@@ -3,13 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My History</title>
+<title>MY PROFILE</title>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+        background: #080b18;
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -18,64 +22,84 @@
     }
 
     .container {
-        background: white;
-        width: 80%;
-        max-width: 600px;
-        padding: 40px;
-        border-radius: 30px;
+        width: 85%;
+        max-width: 650px;
+        padding: 45px;
         text-align: center;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        border: 5px solid #74b9ff;
+        background: #111827;
+        border: 2px solid #00e5ff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #00e5ff,
+                    0 0 50px rgba(0,229,255,0.2);
         position: relative;
     }
 
-    h1 {
-        color: #0984e3;
-        background: #dff1ff;
-        padding: 20px;
-        border-radius: 20px;
-        border-bottom: 5px solid #74b9ff;
+    .top {
+        color: #00e5ff;
+        font-size: 14px;
+        letter-spacing: 6px;
     }
 
-    p {
-        color: #6c5ce7;
-        font-size: 20px;
-        line-height: 1.8;
+    h1 {
+        color: white;
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-shadow: 0 0 15px #00e5ff;
+    }
+
+    .line {
+        width: 100px;
+        height: 4px;
+        background: #00e5ff;
+        margin: 20px auto;
+        box-shadow: 0 0 15px #00e5ff;
+    }
+
+    .welcome {
+        color: #a5b4fc;
+        font-size: 22px;
     }
 
     .name {
-        background: #e8f8f5;
+        background: #080b18;
         padding: 20px;
-        border-radius: 20px;
-        border: 3px dashed #55efc4;
-        margin-top: 20px;
+        border: 1px solid #7c3aed;
+        border-radius: 15px;
+        margin-top: 25px;
+        box-shadow: 0 0 15px rgba(124,58,237,0.3);
     }
 
     .name p {
-        color: #00a884;
+        color: white;
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    .name span {
+        color: #00e5ff;
         font-weight: bold;
     }
 
     .decoration {
-        font-size: 35px;
-        margin: 10px;
-    }
-
-    .stars {
-        font-size: 25px;
-        letter-spacing: 10px;
-        margin: 20px;
+        color: #7c3aed;
+        font-size: 30px;
+        margin: 25px;
+        letter-spacing: 12px;
     }
 
     footer {
-        margin-top: 25px;
-        background: #fff0f5;
-        padding: 15px;
-        border-radius: 15px;
-        color: #e17055;
-        font-size: 16px;
+        color: #64748b;
+        margin-top: 30px;
+        font-size: 13px;
+        letter-spacing: 3px;
     }
 
+    .container:hover {
+        box-shadow: 0 0 30px #00e5ff,
+                    0 0 70px rgba(124,58,237,0.4);
+        transform: translateY(-5px);
+        transition: 0.4s;
+    }
 </style>
 </head>
 
@@ -83,23 +107,25 @@
 
 <div class="container">
 
-    <div class="decoration">🌈 🌸 ⭐ 🌸 🌈</div>
+    <div class="top">WELCOME TO MY WEBSITE</div>
 
-    <h1>🌟 ประวัติส่วนตัว 🌟</h1>
+    <h1>MY PROFILE</h1>
 
-    <div class="stars">✨ 💙 ✨ 💙 ✨</div>
+    <div class="line"></div>
 
-    <p>สวัสดีจ้า 👋</p>
+    <div class="decoration">◆ ✦ ◆</div>
+
+    <p class="welcome">สวัสดี ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน</p>
 
     <div class="name">
-        <p>👤 ชื่อจริง : จิรพัฒน์ ศรีเมือง</p>
-        <p>💖 ชื่อเล่น : ทิว</p>
+        <p>NAME : <span>จิรพัฒน์ ศรีเมือง</span></p>
+        <p>NICKNAME : <span>ทิว</span></p>
     </div>
 
-    <div class="decoration">🌷 🦋 🌷</div>
+    <div class="decoration">✦ ◆ ✦</div>
 
     <footer>
-        💙 ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน 💙
+        © 2026 MY PERSONAL WEBSITE
     </footer>
 
 </div>
